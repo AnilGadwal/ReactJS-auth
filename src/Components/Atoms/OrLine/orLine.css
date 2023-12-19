@@ -1,0 +1,16 @@
+.or-line{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    color: var(--primary-color);
+    font-size: var(--font-small);
+    margin: 25px 0 15px 0;
+}
+
+.or-line::after, .or-line::before{
+    content: '';
+    height: 1px;
+    background-color: var(--light-grey);
+    width: 100%;
+}

@@ -1,0 +1,28 @@
+.input-field{
+    width: 100%;
+    row-gap: 8px;
+    width: 20dvw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (max-width: 767px) {
+      width: 85dvw;
+    }
+  }
+  
+  .input-field > label{
+    font-size: var(--font-base);
+  }
+  
+  .input-field > input{
+    height: 35px;
+    border: 1px solid var(--light-grey);
+    outline: none;
+    border-radius: 3px;
+    padding: 0 8px;
+  }
+  
+  .input-field > input::placeholder{
+    font-size: var(--font-base);
+  }
+  
