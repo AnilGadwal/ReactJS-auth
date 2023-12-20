@@ -3,5 +3,5 @@
 build:
 	docker build -t "${IMAGE}" .
 
-push: 
+push:
 	docker push "${IMAGE}"
