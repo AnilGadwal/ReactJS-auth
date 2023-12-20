@@ -9,7 +9,7 @@ const BackgrondImage: React.FC<BackgrondImageProps> = (props) => {
   const { imageName } = props;
   return (
     <div className="bg_container">
-      <img src={`/images/${imageName}.jpg`} alt="neom-images" />
+      <img src={`/Images/${imageName}.jpg`} alt="neom-images" />
     </div>
   );
 };
