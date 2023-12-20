@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Docker image build
-        run: docker build -t ${{ env.IMAGE }} -f Dockerfile.
+        run: docker build -t ${{ env.IMAGE }} -f Dockerfile .
 
       - name: Push docker image to dockerhub
         run: docker push ${{ env.IMAGE }}
