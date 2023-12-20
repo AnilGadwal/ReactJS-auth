@@ -5,9 +5,6 @@ on:
     branches:
       - main
 
-env:
-  IMAGE: anilgadwal/reactjs-auth
-
 jobs:
   build:
     name: Push to docker hub
@@ -20,7 +17,7 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Docker image build
-        run: make build
+        run: docker build -t anilgadwal/reactjs-auth .
 
       - name: Push docker image to dockerhub
-        run: make push
+        run: docker push anilgadwal/reactjs-auth
